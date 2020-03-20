@@ -9,7 +9,7 @@ const SearchPage = () => {
   return (
     <>
       <form className={styles.Form} onSubmit={handleSubmit}>
-        <p className={styles.subHeader} >SEARCH FOR ARTISTS</p>
+        <p className={styles.subHeader} >SEARCH FOR BANDS</p>
         <div>
           <input type='text' value={query} onChange={({ target }) => setQuery(target.value)}></input>
           <button>Search</button>
