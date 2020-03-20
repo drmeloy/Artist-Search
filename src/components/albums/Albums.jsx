@@ -19,7 +19,7 @@ const Albums = ({ match }) => {
   const albums = useGetAlbums(artistId);
 
   const albumList = albums.map(album => {
-    const src = album?.coverArt?.front ? `http://coverartarchive.org/release/${album.id}/front` : 'https://m.mrjatt-mp3.com/cover.jpg';
+    const src = album?.coverArt?.front ? `https://coverartarchive.org/release/${album.id}/front` : 'https://m.mrjatt-mp3.com/cover.jpg';
     const alt = album?.coverArt?.front ? `${album.title} cover art` : 'No cover art available';
     
     return (

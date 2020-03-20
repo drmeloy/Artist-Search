@@ -1,4 +1,4 @@
 export const getAlbumCover = id => {
-  return fetch(`http://coverartarchive.org/release/${id}/front`);
+  return fetch(`https://coverartarchive.org/release/${id}/front`);
 };
 
