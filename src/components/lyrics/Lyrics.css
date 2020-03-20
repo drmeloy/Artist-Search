@@ -1,0 +1,76 @@
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway:800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300&display=swap');
+
+.Lyrics {
+  position: fixed;
+  top: 0;
+  width: 65vw;
+  height: 100vh;
+  padding-left: 60px;
+  display: flex;
+  flex-direction: column;
+  background: black;
+  animation: slidein .5s 1;
+  overflow: auto;
+
+  /* Any body text gets Montserrat, font-weight 300 */
+  p {
+    width: 70%;
+    line-height: 1.5;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    color: white;
+    white-space: pre-line;
+  }
+
+  /* H1 and Headers get Raleway Heavy, font-weight: 800 */
+  h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 3rem;
+    color: white;
+  }
+
+  /* Sub-Headings get Raleway, font-weight 300 */
+  h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 3rem;
+    color: white;
+  }
+
+  button {
+    position: fixed;
+    right: 35vw;
+    bottom: 2vh;
+    font-size: 1rem;
+    color: white;
+    background: #000000;
+  }
+
+  @keyframes slidein {
+    from {
+      left: -100vw;
+    }
+
+    to {
+      left: 0;
+    }
+  }
+}
+
+.SlideOut {
+  animation: slideout .5s 1;
+  
+  @keyframes slideout {
+    from {
+      left: 0;
+    }
+
+    to {
+      left: -100vw;
+    }
+  }
+}

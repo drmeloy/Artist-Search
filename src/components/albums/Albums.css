@@ -1,0 +1,96 @@
+.Albums {
+  z-index: 1;
+  position: fixed;
+  height: 100vh;
+  width: 33vw;
+  right: 0;
+  top: 0;
+  background: black;
+  color: white;
+  border-left: 3px solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: auto;  
+  margin-top: 0;
+  animation: slidein .5s 1;
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid;
+  }
+
+  li {
+    list-style: none;
+    margin: 30px;
+    text-align: center;
+  }
+
+  img {
+    width: 15vw;
+  }
+
+  a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  p {
+    margin: 10px;
+  }
+
+  span {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  details {
+    text-align: center;
+    max-width: 80%;
+    margin-top: 30px;
+  }
+
+  button {
+    position: fixed;
+    bottom: 2vh;
+    left: 69vw;
+    color: white;
+    background: black;
+    font-size: 1rem;
+  }
+
+  @keyframes slidein {
+    from {
+      right: -100vw;
+    }
+
+    to {
+      right: 0;
+    }
+  }
+}
+
+.SlideOut {
+  animation: slideout .5s 1;
+  
+  @keyframes slideout {
+    from {
+      right: 0;
+    }
+
+    to {
+      right: -100vw;
+    }
+  }
+}

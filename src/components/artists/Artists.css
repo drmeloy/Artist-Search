@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway:800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300&display=swap');
+
+.Artists {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  overflow: auto;
+  font-size: 30px;
+  padding-bottom: 50px;
+  margin-bottom: 0;
+
+  li {
+    list-style: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    width: 20vw;
+    height: 20vh;
+    border: 1px solid;
+  }
+
+  a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 60px;
+  }
+
+  p {
+    margin: 0;
+    text-align: center;
+    height: 30%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;  
+    text-decoration: none;
+    color: white;
+  }
+}
+
+/* H1 and Headers get Raleway Heavy, font-weight: 800 */
+.Header {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+}
+
+
+/* Sub-Headings get Raleway, font-weight 300 */
+.subHeader {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+}
+
+
+/* Any body text gets Montserrat, font-weight 300 */
+.bodyText {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
